@@ -6,7 +6,7 @@ script:
 matrix:
     include:
         - python: 'pypy'
-        - python: 'pypy3'
+        # - python: 'pypy3' # does not currently work due to upstream bug
         - python: '2.7'
         - python: '3.4'
         - python: '3.5'
