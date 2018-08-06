@@ -1,5 +1,5 @@
-Flask-SignIn
-============
+Flask-SignIn |build-status| |coverage-status|
+=============================================
 
 WORK IN PROGRESS - This will be removed upon first release.
 
@@ -19,3 +19,10 @@ Planned providers:
 
 If you would like to add a provider please start an issue and make a pull
 request.
+
+.. |build-status| image:: https://travis-ci.org/mrshannon/flask-signin.svg?branch=master&style=flat
+   :target: https://travis-ci.org/mrshannon/flask-signin
+   :alt: Build status
+.. |coverage-status| image:: http://codecov.io/github/mrshannon/flask-signin/coverage.svg?branch=master
+   :target: http://codecov.io/github/mrshannon/flask-signin?branch=master
+   :alt: Test coverage

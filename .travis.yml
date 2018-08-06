@@ -1,6 +1,6 @@
 language: python
 install:
-    - pip install python-coveralls
+    - pip install codecov
     - pip install -r dev-requirements.txt
 script:
     - make test
@@ -16,4 +16,4 @@ matrix:
           dist: xenial
           sudo: true
 after_success:
-    - coveralls
+    - codecov
