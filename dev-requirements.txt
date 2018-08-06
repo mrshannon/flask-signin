@@ -9,3 +9,6 @@ Flask-Sphinx-Themes
 pytest
 pytest-cov
 pytest-mock
+pylint
+pycodestyle
+pydocstyle

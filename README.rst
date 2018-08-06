@@ -3,7 +3,7 @@ Flask-SignIn
 
 WORK IN PROGRESS - This will be removed upon first release.
 
-Simplify authentication for Flask with Blueprints for authenticating users both
+Simplified authentication for Flask with Blueprints for authenticating users both
 against local databases and against 3rd party identity providers.
 
 The current providers are:
