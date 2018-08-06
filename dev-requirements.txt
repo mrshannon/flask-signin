@@ -1,0 +1,8 @@
+# runtime
+-r requirements.txt
+
+# documentation
+sphinx>=1.3
+Flask-Sphinx-Themes
+
+# testing
