@@ -57,5 +57,5 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ),
-    zip_safe=True
+    zip_safe=False
 )

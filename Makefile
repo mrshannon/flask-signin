@@ -8,14 +8,17 @@ all:
 	@echo 'pdf              build PDF documentation (requires LaTeX)'
 	@echo 'clean            cleanup source tree'
 
-test: check
+init:
+	pip install -q -r dev-requirements.txt
+
+test: check init
 	@python -m pytest --cov=flask_signin --cov=tests --cov-branch
 
-coverage: check
+coverage: check init
 	@python -m pytest --cov=flask_signin --cov=tests --cov-branch \
 		--cov-report html
 
-check:
+check: init
 	@python setup.py check --restructuredtext --strict && \
 		([ $$? -eq 0 ] && echo "README.rst ok") || \
 		echo "Invalid markup in README.rst!"
