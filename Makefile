@@ -35,4 +35,6 @@ clean:
 	@rm -f .coverage
 	@rm -rf htmlcov
 	@rm -rf __pycache__ flask_sigin/__pycache__ tests/__pycache__
+	@rm -rf *.egg-info
+	@rm -rf .tox
 	@$(MAKE) -C docs clean
