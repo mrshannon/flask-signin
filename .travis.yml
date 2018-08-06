@@ -1,5 +1,6 @@
 language: python
 install:
+    - pip install python-coveralls
     - pip install -r dev-requirements.txt
 script:
     - make test
@@ -14,3 +15,5 @@ matrix:
         - python: '3.7'
           dist: xenial
           sudo: true
+after_success:
+    - coveralls
