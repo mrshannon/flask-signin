@@ -43,9 +43,13 @@ setup(
     license='MIT',
     url='https://github.com/mrshannon/flask-signin',
     packages=find_packages(),
+    setup_requires=['pytest-runner'],
     install_requires=get_requirements('requirements.txt'),
     tests_require=get_requirements('dev-requirements.txt'),
     classifiers=(
+        'Development Status :: 1 - Planning',
+        'Environment :: Web Environment',
+        'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Framework :: Flask',
         'Programming Language :: Python',
@@ -56,6 +60,10 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: Implementation :: CPython',
+        'Programming Language :: Python :: Implementation :: PyPy',
+        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+        'Topic :: Software Development :: Libraries :: Python Modules'
     ),
     zip_safe=False
 )
